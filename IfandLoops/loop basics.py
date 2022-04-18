@@ -34,9 +34,9 @@
 # # Python program to illustrate
 # # Iterating by index
 #
-# list = ["geeks", "for", "geeks"]
-# for index in range(len(list)):
-# 	print list[index]
+list = ["geeks", "for", "geeks"]
+for index in range(len(list)):
+	print (list[index])
 # # Python program to illustrate
 # # combining else with for
 #
@@ -50,4 +50,3 @@ for letter in 'greenstech':
 	if letter == 'e' or letter == 's':
 		continue
 	print ('Current Letter :', letter)
-	var = 10

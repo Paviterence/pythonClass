@@ -18,11 +18,14 @@
 #
 # a="boeing","airbus"
 # print(a)
+# print(type(a))#consuming less memory space compare to list
 # a=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 # print(a)
+# print(type(a))
+# #type casting
 # b=tuple(a)
-# print(b)
-# #cocatenation of tuple
+# print("tuple converted",b)
+# # #cocatenation of tuple
 # a1="boeing","airbus"
 # b1=0, 1, 2, 3, 4, 5, 6, 7, 8, 9
 # c=(a1+b1)
@@ -31,8 +34,8 @@
 # print(a,b)
 # print(c,a)
 # #repetition in tuples
-# a=("python",)*5
-# print(a)
+a=("python",)*5
+print(a)
 # b=(1,2,3,4,5,6,7,8,9,10)*2
 # print(b)
 # print(a,b)
@@ -87,11 +90,11 @@
 # for i in range(len(thistuple)):
 #   print(thistuple[i])
 #
-thistuple = ("apple", "banana", "cherry")
-for x in thistuple:
-  print(x)
-print(thistuple.count("apple"))
-print(thistuple.index("apple"))
+# thistuple = ("apple", "banana", "cherry")
+# for x in thistuple:
+#   print(x)
+# print(thistuple.count("apple"))
+# print(thistuple.index("apple"))
 # # Method	Description
 # # count()	Returns the number of times a specified value occurs in a tuple
 # # index()	Searches the tuple for a specified value and returns the position of where it was found

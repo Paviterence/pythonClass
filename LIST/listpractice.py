@@ -21,27 +21,29 @@
 #
 # Lists are created using square brackets"""
 #
-thislist = ["apple", "banana", "cherry"]
-print(thislist)
-print("id for this list---->",id(thislist))
-print((type(thislist)))
-print("=*"*50)
+# pavi = ["apple", "banana", "cherry"]
+# print(pavi)
+# print("id for this list---->",id(pavi))
+# print((type(pavi)))
+# print("=*"*50)
 #
 # """List items are ordered, changeable or mutable, and allow duplicate values.
 # List items are indexed, the first item has index [0], the second item has index [1] etc."""
-#
-thislist[0]='Replaced'#ordered
-print(thislist)
-thislist.insert(0,"apple")#inserted without change the order
-print(thislist)
-print("id is same after insert and replaced check here----->",id(thislist))
+# #Replace
+# print(pavi[0])
+# pavi[0]='Replaced'#ordered
+# print(pavi)
+# pavi.insert(0,"hello")#inserted without change the order
+# print(pavi)
+# print("id is same after insert and replaced check here----->",id(pavi))
 #
 # print("=*"*50)
-#
+# #
 # list2= ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
-#lenth function shows how many values inside the list
-# print(len(list2))
-#lists are indexed
+# # lenth function shows how many values inside the list
+# print(len(list2))#7 =0,1,2,3,4,5,6 in negative index -1.-2.-3
+# print(list2.index("apple"))
+# # lists are indexed
 # print(list2[0])
 # print(list2[2])
 # print(list2[-1])
@@ -50,8 +52,11 @@ print("id is same after insert and replaced check here----->",id(thislist))
 # print(list2[2:4])
 # print(list2[:4])
 # print(list2[2:])
-# if "apple" in thislist:
+# print("=*"*50)
+# if "apple  " in list2:
 #   print("Yes, 'apple' is in the fruits list")
+# else:
+#     print("not in the list")
 # print("=*"*50)
 #
 # list3= ["apple", "banana", "cherry", "orange", "kiwi", "mango"]
@@ -69,25 +74,27 @@ print("id is same after insert and replaced check here----->",id(thislist))
 # print(thislist)
 # print("=*"*50)
 # #append
-# #To add an item to the end of the list, use the append() metho
+#To add an item to the end of the list, use the append() metho
 # list6 = ["apple", "banana", "cherry"]
-# list6.append("orange")
+# list6.append("orange")#extend
 # print(list6)
 # print("=*"*50)
 # # Remove Specified Item remove()
-# # The remove() method removes the specified item.
-# thislist1= ["apple", "banana", "cherry"]
-# thislist1.remove("banana")
+# The remove() method removes the specified item.
+# thislist1= ["apple", "banana", "cherry","banana"]
+# thislist1.remove("banana")#value mention
 # print(thislist1)
 # print("=*"*50)
 # # Remove Specified Index pop()
-# # The pop() method removes the specified index.
-# thislist2 = ["apple", "banana", "cherry"]
-# print(thislist2.pop(1))
+# The pop() method removes the specified index.
+thislist2 = ["apple", "banana", "cherry"]
+# print(thislist2.pop(0))
 # print(thislist2)
 # print("=*"*50)
-# # The del keyword also removes the specified index:
-# del thislist2[0]
+# The del keyword also removes the specified index:\pr
+# print(thislist2)
+# # del thislist2[2]
+# thislist2.clear()
 # print(thislist2)
 # # The clear() method empties the list.
 # # The list still remains, but it has no content.
@@ -98,8 +105,9 @@ print("id is same after insert and replaced check here----->",id(thislist))
 #     print(thislist2)
 # except:
 #     print("list deleted")
-# thislist3 = ["apple", "banana", "cherry"]
+# thislist3 = [True, "banana", "cherry"]
 # mylist = thislist3.copy()
+# print(thislist3)
 # print(mylist)
 #
 # thislist4 = ["apple", "banana", "cherry"]
@@ -111,5 +119,6 @@ list2 = [1, 2, 3]
 list3 = list1 + list2
 print(list3)
 list1.extend(list2)
+list1.append(list2)
 print(list1)
 
