@@ -1,7 +1,7 @@
 #string function
 import string
 #
-# name="pavithrabalan sethu"
+# name="Software Development Engineer in TESTING"
 # print(name)
 # print(type(name))
 # print(id(name))
@@ -49,15 +49,14 @@ import string
 #string is immutable because the id value is changed after updatation of values
 
 
-# Str1="welcome"
-# print("1st print",id(Str1))
-# print("2nd print",id(Str1))
-# str1=Str1+"to python"
-# print("value is updated after the id is",id(str1))
-# print('so the string is immutable')
+Str1="welcome"
+print("1st print",id(Str1))
+str1=Str1+"to python"
+print("value is updated after the id is",id(str1))
+print('so the string is immutable')
 
 #string with + and* operators
-string="hello"
+# string="hello"
 # print((string+"welcome"))
 # print(string*3)
 # #find ascci value char
@@ -73,19 +72,19 @@ string="hello"
 # print(max(string))
 # print(len(string))
 
-#using in,not
-print("w"in string)
-print('h'in string)
-print("w"not in string)
-print('h'not in string)
-
-#string comparison
-print("tie"=="tim")
-print("tie"!="tim")
-print("tie">="tim")
-print("tie"<="tim")
-print("tie">"tim")
-print("tie"<"tim")
+# #using in,not
+# print("w"in string)
+# print('h'in string)
+# print("w"not in string)
+# print('h'not in string)
+#
+# #string comparison
+# print("tie"=="tim")
+# print("tie"!="tim")
+# print("tie">="tim")
+# print("tie"<="tim")
+# print("tie">"tim")
+# print("tie"<"tim")
 
 
 
