@@ -1,4 +1,4 @@
-#reverse a string
+# # reverse a string
 # a=input("enter the sting to reverse: \n")
 # r=a[::-1]#reverse the character
 # print(r)
@@ -7,7 +7,7 @@
 # method:2
 # r=reversed(a)
 # print(''.join(r))
-# method:3 using string
+# # method:3 using string
 # s="my name is pavi"
 # i=len(s)-1
 # output=""
@@ -15,14 +15,14 @@
 #     output=output+s[i]
 #     i -=1
 # print(output)
-
-#reverse a words
+#
+# # reverse a words
 # s="python is very easy compare to other language"
 # l=s.split()
 # print(l)
 # reversel=l[::-1]
 # print("  ".join(reversel))
-#reverse word and content of letters
+# # reverse word and content of letters
 # s="python is very easy compare to other language"
 # l=s.split()
 # print(len(l))#count the words in a string
@@ -32,8 +32,8 @@
 # for word in l2:
 #     l3.append(word[::-1])
 # print(" ".join(l3))
-
-#reverse secon word content in a string
+#
+# # reverse secon word content in a string
 # s="one two three four five"
 # l=s.split()
 # lenl=len(l)
@@ -45,7 +45,7 @@
 #     else:
 #         l1.append(l[i][::-1])
 # print(l1)
-
+#
 # s="one two three four five"
 # l=s.split()
 # i=0
@@ -57,19 +57,33 @@
 #         l2.append(l[i][::-1])
 #     i +=1
 # print(" ".join(l2))
-
+#
 # # Iterating through a string
 # count = 0
 # for letter in 'Hello World':
 #     if(letter == 'l'):
 #         count += 1
 # print(count,'letters found')
+#
+#
+# str = 'cold'
+# # enumerate()
+# list_enumerate = list(enumerate(str))
+# print('list(enumerate(str) = ', list_enumerate)
+# #character count
+# print('len(str) = ', len(str))
+# str.isascii()
 
+# Python program to remove space from keys
 
-str = 'cold'
-# enumerate()
-list_enumerate = list(enumerate(str))
-print('list(enumerate(str) = ', list_enumerate)
-#character count
-print('len(str) = ', len(str))
-str.isascii()
+# creating a dictionary of type string
+
+Product_list = {'P 01': 'D BMS', 'P 02': 'O S',
+                'P 0 3 ': 'Soft Computing'};
+
+# removing spaces from keys
+# storing them in sam dictionary
+Product_list = {x.replace(' ', ''): v.replace(' ','') for x, v in Product_list.items()}
+
+# printing new dictionary
+print(" New dictionary : ", Product_list)
