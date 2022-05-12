@@ -147,13 +147,14 @@ print(a)"""
 #     print(msg)
 #
 # #type 3 without try and exception it gives the error
-# """
-# age=int(input("enter your age:"))
-# if age < 18:
-#     raise ValueError("age should be less than 18")
-# else:
-#     print("permitted for voting")"""
-#
+
+age=int(input("enter your age:"))
+# raise TypeError("enter string only ")
+if age < 18:
+    raise ValueError("age should be less than 18")
+else:
+    print("permitted for voting")
+
 # #type 4 using class and object raise with comments
 # class humantemprature:
 #     def __init__(self,temp):
