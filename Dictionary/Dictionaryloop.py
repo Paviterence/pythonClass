@@ -32,13 +32,15 @@ items =	{
   "year": 2000,
 "coaching":["python","java","selenium"]
 }
-# for x, y in items.items():
-#   print(x, y)
-# print("**"*20)
-# print("**"*20)
-# mydict = items.copy()
-# print(mydict)
-# mydic = dict(items)
+for x, y in items.items():
+  print(x, y)
+print("**"*20)
+print("**"*20)
+mydict = items.copy()
+print(mydict)
+mydic = dict(items)
+items.popitem()
+print(items)
 # print(mydic)
 # for value in items.keys():
 #   print(value)

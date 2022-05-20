@@ -33,9 +33,9 @@
 # x = thisdict1["brand"]
 # print(x)
 # print(thisdict1.keys())
-# y= thisdict1.values()
+# y= thi)sdict1.values()
 # print(y)
-# print("*=*"*50)
+# print("*=*"*50
 
 car = {
 "brand": "Ford",
